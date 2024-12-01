@@ -1,6 +1,6 @@
 """Testing the advent of code prep class."""
 
-import pytest
+import pytest  # type: ignore
 import aoc_prepare
 
 
