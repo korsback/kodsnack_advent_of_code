@@ -1,0 +1,7 @@
+RUNNING
+
+install sqlite3, e.g.
+$ sudo apt install -y sqlite3
+
+then pass the source code into sqlite, e.g.
+$ sqlite3 < 01_01.sql
