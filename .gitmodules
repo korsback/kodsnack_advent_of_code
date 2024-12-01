@@ -1,3 +1,9 @@
+
 [submodule "2024/squid-box-csharp"]
 	path = 2024/squid-box-csharp
 	url = https://github.com/squid-box/adventofcode2024.git
+
+[submodule "2024/digimatic-rust"]
+	path = 2024/digimatic-rust
+	url = https://github.com/digimatic/advent_of_code_2024-rust.git
+
