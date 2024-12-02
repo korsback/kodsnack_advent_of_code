@@ -1,4 +1,3 @@
-
 [submodule "2024/squid-box-csharp"]
 	path = 2024/squid-box-csharp
 	url = https://github.com/squid-box/adventofcode2024.git
@@ -10,3 +9,7 @@
 [submodule "2024/yxhuvud-crystal"]
 	path = 2024/yxhuvud-crystal
 	url = git@github.com:yxhuvud/aoc24
+
+[submodule "2024/mawkler-rust"]
+	path = 2024/mawkler-rust
+	url = git@github.com:mawkler/advent-of-code.git
