@@ -7,3 +7,6 @@
 	path = 2024/digimatic-rust
 	url = https://github.com/digimatic/advent_of_code_2024-rust.git
 
+[submodule "2024/yxhuvud-crystal"]
+	path = 2024/yxhuvud-crystal
+	url = git@github.com:yxhuvud/aoc24
