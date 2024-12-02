@@ -18,7 +18,8 @@ def run_day(day: int) -> tuple[Any, Any]:
         
         # Read input file
         with open(f'inputs/day{day:02d}.txt', 'r') as f:
-            input_data = f.read().strip()
+            #input_data = f.read().strip()
+            input_data = f.read().split("\n")
         
         # Time the solutions
         start_time = time.time()
