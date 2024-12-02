@@ -1,30 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'bundler/inline'
-
-gemfile do
-  source 'https://rubygems.org'
-  gem 'debug'
-  gem 'fiddle'
-end
-
-def solve(line)
-  line
-end
-
-def parse_line(line)
-  line.scan(/\d+/).map(&:to_i)
-end
-
-def solve_line(line)
-  line.sum
-end
-
 File.readlines(ARGV[0]).map(&:strip)
-    .map { |line| parse_line(line) }
+    .map { |line| line.scan(/\d+/).map(&:to_i) }
+    .transpose.map(&:sort)
     .transpose
-    .map(&:sort)
-    .transpose
-    .map { |(a, b)| (a.abs - b.abs).abs }
-    .sum
+    .sum { |(a, b)| (a.abs - b.abs).abs }
     .then(&method(:puts))
