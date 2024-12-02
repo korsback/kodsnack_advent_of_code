@@ -1,3 +1,11 @@
+PREPROCESSING
+
+the input data is converted to csv, e.g. via
+
+  sed 's/ \+/,/g' input
+
+no other preprocessing is performed
+
 RUNNING
 
 install sqlite3, e.g.
