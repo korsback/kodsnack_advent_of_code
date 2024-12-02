@@ -6,24 +6,10 @@ def parseLevels(inp):
 
 
 def checkLevel(level):
-    state = "="
-    lastDigit = None
-    for digit in level:
-        if state == "=":
-            if lastDigit is None:
-                pass
-            elif lastDigit > digit >= lastDigit - 3:
-                state = "-"
-            elif lastDigit < digit <= lastDigit + 3:
-                state = "+"
-            else:
-                return False
-        elif state == "+" and not (lastDigit < digit <= lastDigit + 3):
-            return False
-        elif state == "-" and not (lastDigit > digit >= lastDigit - 3):
-            return False
-        lastDigit = digit
-    return True
+    # fmt: off
+    return (all(((x - y) in (1, 2, 3) for x, y in zip(level, level[1:]))) or 
+            all(((y - x) in (1, 2, 3) for x, y in zip(level, level[1:]))))
+    # fmt: on
 
 
 def part1(inp):
