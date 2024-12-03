@@ -16,3 +16,6 @@
 [submodule "2024/johan1a-scala"]
 	path = 2024/johan1a-scala
 	url = https://github.com/johan1a/advent-of-code-2024.git
+[submodule "2024/kjelloh-cpp"]
+	path = 2024/kjelloh-cpp
+	url = https://github.com/kjelloh/advent_of_code_2024.git
