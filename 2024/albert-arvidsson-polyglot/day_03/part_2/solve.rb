@@ -8,6 +8,6 @@ def solve(enabled: true)
 end
 
 File.read(ARGV[0])
-    .scan(/(mul\((\d{1,3}),(\d{1,3})\)|do\(\)|(don't)\(\))/)
+    .scan(/(mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don't\(\))/)
     .sum(&solve)
     .then(&method(:pp))
