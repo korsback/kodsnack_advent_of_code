@@ -13,3 +13,6 @@
 [submodule "2024/mawkler-rust"]
 	path = 2024/mawkler-rust
 	url = git@github.com:mawkler/advent-of-code.git
+[submodule "2024/johan1a-scala"]
+	path = 2024/johan1a-scala
+	url = https://github.com/johan1a/advent-of-code-2024.git
