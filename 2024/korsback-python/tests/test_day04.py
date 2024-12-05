@@ -14,6 +14,31 @@ test_data = [
     "MXMXAXMASX"
 ]
 
+test_data_2 = [
+    ".M.S......",
+    "..A..MSMS.",
+    ".M.S.MAA..",
+    "..A.ASMSM.",
+    ".M.S.M....",
+    "..........",
+    "S.S.S.S.S.",
+    ".A.A.A.A..",
+    "M.M.M.M.M.",
+    ".........."
+]
+test_data_2_split = [
+    [".M.S......"],
+    ["..A..MSMS."],
+    [".M.S.MAA.."],
+    ["..A.ASMSM."],
+    [".M.S.M...."],
+    [".........."],
+    ["S.S.S.S.S."],
+    [".A.A.A.A.."],
+    ["M.M.M.M.M."],
+    [".........."]
+]
+
 @pytest.mark.parametrize(
     "data, expected",
     [
@@ -98,3 +123,13 @@ def test_run_a():
 def test_run_a_with_real_data():
 
     assert day04.run_a(test_data) == 18
+
+def test_lines_for_x_mas():
+    data = [test_data_2[0], test_data_2[1], test_data_2[2]]
+    expected = 1
+
+    assert day04.test_lines_for_x_mas(data) == expected
+
+def test_run_b():
+    assert day04.run_b(test_data) == 9
+
